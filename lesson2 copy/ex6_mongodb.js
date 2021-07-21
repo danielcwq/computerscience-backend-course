@@ -5,7 +5,7 @@ async function myAsyncFunction(){
     const { MongoClient } = require("mongodb");
     // TODO: Replace the uri string with your MongoDB deployment's connection string.
     const uri =
-        "mongodb+srv://danielcwq2:cr055c0untrY@cluster0.vomg3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+        "mongodb+srv://<username>:<password>cluster0.vomg3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
     const client = new MongoClient(uri);
     await client.connect()
     console.log('hello')
